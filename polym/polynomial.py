@@ -100,7 +100,12 @@ class Polynomial:
         return other + (-1) * self
 
     def __getitem__(self, item: int) -> int | float:
-        return self.coefficients[item]
+        if not isinstance(item, int):
+            raise IndexError("Index must be integer")
+        try:
+            return self.coefficients[item]
+        except IndexError:
+            return 0
 
     def value(self, x: int | float) -> int | float:
         p = 0.0
