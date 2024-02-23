@@ -99,6 +99,9 @@ class Polynomial:
     def __rsub__(self, other: Any) -> Polynomial:
         return other + (-1) * self
 
+    def __getitem__(self, item: int) -> int | float:
+        return self.coefficients[item]
+
     def value(self, x: int | float) -> int | float:
         p = 0.0
         for i, c in enumerate(self.coefficients):
