@@ -2,7 +2,7 @@
 name = "polym"
 version = "0.1.0"
 description = "Small library for working with polynomials."
-authors = ["Rusih100 <rusih100@gmail.com>"]
+authors = ["rusih100 <rusih100@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
